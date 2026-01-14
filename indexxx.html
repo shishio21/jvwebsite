@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuzzy Wire Crafts - Handmade Art</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">LUCY<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#products">products</a>
+            <a href="#help">help & support</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <div class="content">
+                    <h3>fuzzy wire crafts</h3>
+                    <span>handmade with love</span>
+                    <p>discover unique, colorful fuzzy wire creations perfect for gifts, decor, and art enthusiasts</p>
+                    <a href="#products" class="btn">shop now</a>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="content">
+                    <h3>custom creations</h3>
+                    <span>made just for you</span>
+                    <p>bring your ideas to life with our custom fuzzy wire crafts - keychains, decorations, and more!</p>
+                    <a href="#contact" class="btn">order custom</a>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="content">
+                    <h3>perfect gifts</h3>
+                    <span>spread joy & creativity</span>
+                    <p>find the perfect handmade gift for birthdays, holidays, or any special occasion</p>
+                    <a href="#products" class="btn">browse gifts</a>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-btn prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h1 class="heading"><span>about</span> us</h1>
+
+        <div class="row">
+            <div class="video-container">
+                <video src="Images/Untitled (2000 x 2000 px) (2000 x 1900 px) (1970 x 1750 px).mp4" loop autoplay muted></video>
+            </div>
+
+            <div class="content">
+                <h3>why choose us?</h3>
+                <p>Each fuzzy wire craft is handmade with care and creativity. We transform colorful chenille stems into beautiful animals, flowers, and decorative pieces that bring joy to any space.</p>
+                <p>Our crafts are perfect for gifts, home decor, party favors, and creative expression. Every piece is unique and made with high-quality materials.</p>
+                <a href="#products" class="btn">learn more</a>
+            </div>
+        </div>
+
+        <div class="icons-container">
+            <div class="icons">
+                <i class="fas fa-hand-sparkles"></i>
+                <div class="info">
+                    <h3>handmade quality</h3>
+                    <p>every piece crafted with attention to detail</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-shipping-fast"></i>
+                <div class="info">
+                    <h3>fast delivery</h3>
+                    <p>quick and secure shipping worldwide</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-headset"></i>
+                <div class="info">
+                    <h3>24/7 support</h3>
+                    <p>we're here to help anytime</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h1 class="heading">our <span>products</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="Images/1.mcdo.jpg" alt="French Fries Keychain">
+                </div>
+                <div class="content">
+                    <h3>French Fries Keychain</h3>
+                    <div class="price">₱35</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/2. tortilla.jpg" alt="Taco Keychain">
+                </div>
+                <div class="content">
+                    <h3>Taco Keychain</h3>
+                    <div class="price">₱35</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/3. flower.jpg" alt="Flower Keychain">
+                </div>
+                <div class="content">
+                    <h3>Flower Keychain</h3>
+                    <div class="price">₱20</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/4. snoopy.jpg" alt="Puppy Keychain">
+                </div>
+                <div class="content">
+                    <h3>Snoopy Keychain</h3>
+                    <div class="price">₱40</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/5. christmas_tree.jpg" alt="Christmas Tree Headband">
+                </div>
+                <div class="content">
+                    <h3>Christmas Tree Headband</h3>
+                    <div class="price">₱50</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/5. doraemon.jpg" alt="character keychains">
+                </div>
+                <div class="content">
+                    <h3>Character Keychains</h3>
+                    <div class="price">₱35</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/7. music.jpg" alt="music note keychains">
+                </div>
+                <div class="content">
+                    <h3>Music Note Keychains</h3>
+                    <div class="price">₱15</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/cherries.jpg" alt="cherry keychains">
+                </div>
+                <div class="content">
+                    <h3>Cherry Keychain Set</h3>
+                    <div class="price">₱25</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/cherry.jpg" alt="cherry star keychain">
+                </div>
+                <div class="content">
+                    <h3>Cherry Star Keychain</h3>
+                    <div class="price">₱25</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/flowers ring.jpg" alt="flower keychain set">
+                </div>
+                <div class="content">
+                    <h3>Flower Keychain Set</h3>
+                    <div class="price">₱20</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/luffy's hat.jpg" alt="yellow hat keychain">
+                </div>
+                <div class="content">
+                    <h3>Luffy's Hat keychain</h3>
+                    <div class="price">₱40</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/octopus.jpg" alt="cute character set">
+                </div>
+                <div class="content">
+                    <h3>Cute Octopus Set</h3>
+                    <div class="price">₱35</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/pizza.jpg" alt="Pizza Keychain">
+                </div>
+                <div class="content">
+                    <h3>Pizza Keychain Set</h3>
+                    <div class="price">₱20</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/turtles.jpg" alt="turtles keychains">
+                </div>
+                <div class="content">
+                    <h3>Turtle Keychain Set</h3>
+                    <div class="price">₱20</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/ribbon.jpg" alt="bow keychains">
+                </div>
+                <div class="content">
+                    <h3>Bow Keychain Collection</h3>
+                    <div class="price">₱15</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help & Support Section -->
+    <section class="help" id="help">
+        <h1 class="heading">help & <span>support</span></h1>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for help topics..." id="helpSearch">
+            <button class="btn search-btn"><i class="fas fa-search"></i> search</button>
+        </div>
+
+        <div class="help-container">
+            <div class="help-box">
+                <i class="fas fa-shopping-bag"></i>
+                <h3>how to order</h3>
+                <p>browse our products, click "add to cart", and proceed to checkout. we accept various payment methods for your convenience.</p>
+                <a href="#" class="help-link">learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="help-box">
+                <i class="fas fa-truck"></i>
+                <h3>shipping information</h3>
+                <p>we offer fast shipping worldwide. orders are processed within 1-2 business days. delivery takes 5-10 business days depending on location.</p>
+                <a href="#" class="help-link">learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="help-box">
+                <i class="fas fa-undo"></i>
+                <h3>returns & exchanges</h3>
+                <p>not satisfied? we accept returns within 30 days of delivery. items must be in original condition. contact us to initiate a return.</p>
+                <a href="#" class="help-link">learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="help-box">
+                <i class="fas fa-credit-card"></i>
+                <h3>payment methods</h3>
+                <p>we accept credit cards, debit cards, PayPal, and other secure payment options. all transactions are encrypted and secure.</p>
+                <a href="#" class="help-link">learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="help-box">
+                <i class="fas fa-gift"></i>
+                <h3>custom orders</h3>
+                <p>want something special? we create custom fuzzy wire crafts! contact us with your ideas and we'll bring them to life.</p>
+                <a href="#" class="help-link">learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="help-box">
+                <i class="fas fa-tools"></i>
+                <h3>care instructions</h3>
+                <p>keep your fuzzy wire crafts looking beautiful. avoid water, store in cool dry place, and gently dust with a soft cloth when needed.</p>
+                <a href="#" class="help-link">learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>frequently asked questions</h2>
+            <div class="faq-item">
+                <h4><i class="fas fa-question-circle"></i> how long does it take to make a custom order?</h4>
+                <p>custom orders typically take 3-5 business days to complete, plus shipping time.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-question-circle"></i> are the materials safe for children?</h4>
+                <p>yes! our fuzzy wire crafts are made with child-safe materials. however, small parts may pose a choking hazard for children under 3.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-question-circle"></i> can i track my order?</h4>
+                <p>absolutely! once your order ships, you'll receive a tracking number via email.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-question-circle"></i> do you offer wholesale pricing?</h4>
+                <p>yes! contact us at LUCYfuzzywire@gmail.com for wholesale inquiries and bulk order discounts.</p>
+            </div>
+        </div>
+
+        <div class="contact-support">
+            <h3>still need help?</h3>
+            <p>our support team is here for you!</p>
+            <a href="#contact" class="btn">contact support</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> us</h1>
+
+        <div class="row">
+            <form>
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="tel" placeholder="phone">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea placeholder="message"></textarea>
+                <button type="submit" class="btn">send message</button>
+            </form>
+
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1516387938699-a93567ec168e?w=600&h=600&fit=crop" alt="Contact">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#products">products</a>
+                <a href="#contact">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my orders</a>
+                <a href="#">my wishlist</a>
+                <a href="#">privacy policy</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">pinterest</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="tel:+1234567890"><i class="fas fa-phone"></i> +63 912 345 6789</a>
+                <a href="mailto:info@fuzzywire.com"><i class="fas fa-envelope"></i> LUCYfuzzywire@gmail.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Quezon City, NCR, Philippines</a>
+            </div>
+        </div>
+
+        <div class="credit">created by <span>fuzzy wire crafts</span> | all rights reserved</div>
+    </section>
+
+   
+</body>
+</html>

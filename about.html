@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuzzy Wire Crafts - Handmade Art</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="index.html" class="logo">LUCY<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="help.html">Help & Support</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h1 class="heading"><span>About</span> Us</h1>
+
+        <div class="row">
+            <div class="video-container">
+                <video src="Images/compressed-9l9b9zaI.mp4" loop autoplay muted></video>
+            </div>
+
+            <div class="content">
+                <h3>Why choose us?</h3>
+                <p>Each fuzzy wire craft is handmade with care and creativity. We transform colorful chenille stems into beautiful animals, flowers, and decorative pieces that bring joy to any space.</p>
+                <p>Our crafts are perfect for gifts, home decor, party favors, and creative expression. Every piece is unique and made with high-quality materials.</p>
+                <a href="#products" class="btn">Learn more</a>
+            </div>
+        </div>
+
+        <div class="icons-container">
+            <div class="icons">
+                <i class="fas fa-hand-sparkles"></i>
+                <div class="info">
+                    <h3>Handmade Quality</h3>
+                    <p>Every piece crafted with attention to detail</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-shipping-fast"></i>
+                <div class="info">
+                    <h3>Fast Delivery</h3>
+                    <p>Quick and secure shipping worldwide</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-headset"></i>
+                <div class="info">
+                    <h3>24/7 Support</h3>
+                    <p>We're here to help anytime</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+<!-- Footer -->
+<div id="footer">
+        <script>
+        fetch("footer.html") 
+        .then(response => response.text()) 
+        .then(data => { 
+            document.getElementById("footer").innerHTML = data; }); 
+        </script>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>

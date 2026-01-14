@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuzzy Wire Crafts - Handmade Art</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">LUCY<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="help.html">Help & Support</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+    </header>
+
+    <!-- Help & Support Section -->
+    <section class="help" id="help">
+        <h1 class="heading">Help & <span>Support</span></h1>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for help topics..." id="helpSearch">
+            <button class="btn search-btn"><i class="fas fa-search"></i> search</button>
+        </div>
+
+        <div class="help-container">
+            <div class="help-box">
+                <i class="fas fa-shopping-bag"></i>
+                <h3>How to Order</h3>
+                <p>Browse our products, click "Add to Cart", and proceed to checkout. We accept various payment methods for your convenience.</p>
+                <a href="#" class="help-link">learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="help-box">
+                <i class="fas fa-truck"></i>
+                <h3>Shipping Information</h3>
+                <p>We offer fast shipping worldwide. orders are processed within 1-2 business days. Delivery takes 5-10 business days depending on location.</p>
+                <a href="#" class="help-link">learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="help-box">
+                <i class="fas fa-undo"></i>
+                <h3>Returns & Exchanges</h3>
+                <p>Not satisfied? we accept returns within 30 days of delivery. Items must be in original condition. Contact us to initiate a return.</p>
+                <a href="#" class="help-link">learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="help-box">
+                <i class="fas fa-credit-card"></i>
+                <h3>Payment Methods</h3>
+                <p>We accept credit cards, debit cards, PayPal, and other secure payment options. All transactions are encrypted and secure.</p>
+                <a href="#" class="help-link">learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="help-box">
+                <i class="fas fa-gift"></i>
+                <h3>Custom Orders</h3>
+                <p>Want something special? we create custom fuzzy wire crafts! Contact us with your ideas and we'll bring them to life.</p>
+                <a href="#" class="help-link">learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="help-box">
+                <i class="fas fa-tools"></i>
+                <h3>Care Instructions</h3>
+                <p>Keep your fuzzy wire crafts looking beautiful. avoid water, store in cool dry place, and gently dust with a soft cloth when needed.</p>
+                <a href="#" class="help-link">learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h4><i class="fas fa-question-circle"></i> How long does it take to make a custom order?</h4>
+                <p>Custom orders typically take 3-5 business days to complete, plus shipping time.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-question-circle"></i> Are the materials safe for children?</h4>
+                <p>Yes! our fuzzy wire crafts are made with child-safe materials. however, small parts may pose a choking hazard for children under 3.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-question-circle"></i> Can I track my order?</h4>
+                <p>Absolutely! once your order ships, you'll receive a tracking number via email.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-question-circle"></i> Do you offer wholesale pricing?</h4>
+                <p>Yes! contact us at LUCYfuzzywire@gmail.com for wholesale inquiries and bulk order discounts.</p>
+            </div>
+        </div>
+
+        <div class="contact-support">
+            <h3>Still need help?</h3>
+            <p>Our support team is here for you!</p>
+            <a href="#contact" class="btn">Contact Support</a>
+        </div>
+    </section>
+  
+<!-- Footer -->
+   <div id="footer">
+        <script>
+        fetch("footer.html") 
+        .then(response => response.text()) 
+        .then(data => { 
+            document.getElementById("footer").innerHTML = data; }); 
+        </script>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
